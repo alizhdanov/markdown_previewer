@@ -1,0 +1,17 @@
+.markdown {
+  margin-top: 2em;
+  display: flex;
+
+  * {
+    flex: 1 0 50%;
+    min-height: calc(80vh - 150px);
+  }
+}
+
+.markdown__input {
+
+}
+
+.markdown__result {
+
+}
