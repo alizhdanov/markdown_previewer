@@ -21,7 +21,7 @@ class MarkdownPreviewer extends Component {
 
     render () {
         return (
-            <div className="container">
+            <div className="App-content container">
                 <div className="markdown">
                     <textarea className="markdown__input" value={this.state.markdownVal} onChange={this.onTextareaChange}></textarea>
                     <div className="markdown__result" dangerouslySetInnerHTML={this.createMarkup()}></div>

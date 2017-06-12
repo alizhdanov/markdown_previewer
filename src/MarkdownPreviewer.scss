@@ -1,17 +1,32 @@
 .markdown {
-  margin-top: 2em;
+  margin: 2em 0;
+  padding: 1em;
   display: flex;
+  background-color: #ccc;
+  border-radius: 1em;
+  font-family: 'Open Sans', sans-serif;
 
   > * {
-    flex: 1 0 50%;
+    flex: 1 0 0;
     min-height: calc(80vh - 150px);
+
+    &:not(:last-child) {
+      margin-right: 1em;
+    }
   }
 }
 
 .markdown__input {
-
+  padding: 1em;
+  border-radius: 1em;
+  resize: none;
+  outline: none;
+  border: 0;
 }
 
 .markdown__result {
-
+  padding: 1em;
+  border-radius: 1em;
+  //border: 1px solid #000;
+  background-color: #f1f1f1;
 }

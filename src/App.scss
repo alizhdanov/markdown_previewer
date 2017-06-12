@@ -6,8 +6,18 @@ html {
   font-size: 14px;
 }
 
-.App {
+body {
+  background:
+          radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
+          radial-gradient(at 100% 100%,      rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px),
+          #8a3;
+  background-size: 20px 20px;
+}
 
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -17,10 +27,25 @@ html {
 
 .App-header {
   background-color: #222;
-  height: 150px;
-  padding: 20px;
+  font-size: 2em;
+  padding: 0.5em;
   color: white;
   text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.App-footer {
+  padding: 1em;
+  margin-top: auto;
+  color: #fff;
+  text-align: right;
+  background-color: #222;
+  font-family: 'Raleway', sans-serif;
+}
+
+.App-content {
+  flex: 1;
+  width: 100%;
 }
 
 .App-intro {

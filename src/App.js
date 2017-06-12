@@ -8,11 +8,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
+        <header className="App-header">
+          <h2>React Markdown Previewer</h2>
+        </header>
         <MarkdownPreviewer />
+        <footer className="App-footer">
+            created by <a href="https://github.com/makedonec88">@makedonec88</a>
+        </footer>
       </div>
     );
   }
