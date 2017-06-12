@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './MarkdownPreviewer.css'
+import 'gutenberg-web-type/src/style/gutenberg.scss'
+import marked from 'marked'
 
 class MarkdownPreviewer extends Component {
     state = {
@@ -12,12 +14,17 @@ class MarkdownPreviewer extends Component {
         })
     }
 
+    createMarkup = () => {
+        return {__html: marked(this.state.markdownVal)};
+    }
+
+
     render () {
         return (
             <div className="container">
                 <div className="markdown">
                     <textarea className="markdown__input" value={this.state.markdownVal} onChange={this.onTextareaChange}></textarea>
-                    <div className="markdown__result">{this.state.markdownVal}</div>
+                    <div className="markdown__result" dangerouslySetInnerHTML={this.createMarkup()}></div>
                 </div>
             </div>
         )
